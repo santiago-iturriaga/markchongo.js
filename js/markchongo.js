@@ -55,7 +55,8 @@ function loadMainMarkdown(filename) {
 			// the response is passed to the function
 			success: function( md ) {
 				$( document ).scrollTop(0);
-				$( ".main-md" ).html(micromarkdown.parse(md));
+				//$( ".main-md" ).html(micromarkdown.parse(md));
+				$( ".main-md" ).html(wiky.process(md));
 				$( "body" ).removeClass("error404");
 				setCurrentPageActiveStyle();
 			},
@@ -114,7 +115,7 @@ function loadCurrentState() {
 		// Using the core $.ajax() method
 		$.ajax({
 			// The URL for the request
-			url: "sidebar.md",
+			url: "sidebar.mw",
 
 			// The data to send (will be converted to a query string)
 			data: {},
@@ -128,7 +129,8 @@ function loadCurrentState() {
 			// Code to run if the request succeeds;
 			// the response is passed to the function
 			success: function( md ) {
-				$( ".sidebar-md" ).html(micromarkdown.parse(md));
+				//$( ".sidebar-md" ).html(micromarkdown.parse(md));
+				$( ".sidebar-md" ).html(wiky.process(md));
 			},
 
 			// Code to run if the request fails; the raw request and

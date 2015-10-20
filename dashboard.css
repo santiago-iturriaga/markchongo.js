@@ -97,6 +97,9 @@ body {
 
 .main {
   padding: 20px;
+  /*color: #428bca;*/
+  color: #23527c;
+  /*color: #337ab7;*/
 }
 @media (min-width: 768px) {
   .main {
