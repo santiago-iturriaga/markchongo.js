@@ -185,12 +185,15 @@ var micromarkdown = {
     }
 
     /* links */
-    while ((stra = micromarkdown.regexobject.links.exec(str)) !== null) {
+    while ((stra = micromarkdown.regexobject.links.exec(str)) !== null) {	
       if (stra[0].substr(0, 1) === '!') {
         str = str.replace(stra[0], '<img src="' + stra[2] + '" alt="' + stra[1] + '" title="' + stra[1] + '" />\n');
       } else {
-		if (stra[2].substr(stra[2].length-3, 3) == '.md') {
-			str = str.replace(stra[0], '<a ' + micromarkdown.mmdCSSclass(stra[2], strict) + 'href="javascript:loadMainMarkdown(\'' + stra[2] + '\');">' + stra[1] + '</a>\n');
+		var filename_ext = stra[2].split('.').pop();
+		var filename = stra[2].substr(0,stra[2].length - filename_ext.length - 1);
+		  
+		if (filename_ext == 'md') {
+			str = str.replace(stra[0], '<a ' + micromarkdown.mmdCSSclass(stra[2], strict) + 'href="javascript:goToPage(\'' + stra[2] + '\');" class="__page_'+filename+'">' + stra[1] + '</a>\n');
 		} else {
 			str = str.replace(stra[0], '<a ' + micromarkdown.mmdCSSclass(stra[2], strict) + 'href="' + stra[2] + '">' + stra[1] + '</a>\n');
         }

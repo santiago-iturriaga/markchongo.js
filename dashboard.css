@@ -4,7 +4,7 @@
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
+  padding-top: 75px;
 }
 
 
@@ -25,6 +25,30 @@ body {
   border: 0;
 }
 
+.navbar-cecal {
+  background-color: white;
+  /*background-image: url(img/logo_cecal_75.png);*/
+  background-repeat: no-repeat;
+  min-height: 75px;
+}
+
+.navbar-cecal .navbar-header {
+  float: right;
+}
+
+.navbar-cecal .navbar-brand {
+  font-size: 40px;
+  height: 75px;
+  line-height: 75px;
+}
+
+.navbar-cecal .navbar-logo img {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 /*
  * Sidebar
  */
@@ -36,7 +60,7 @@ body {
 @media (min-width: 512px) {
   .sidebar {
     position: fixed;
-    top: 51px;
+    top: 75px;
     bottom: 0;
     left: 0;
     z-index: 1000;
@@ -102,4 +126,57 @@ body {
 .placeholder img {
   display: inline-block;
   border-radius: 50%;
+}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modalLoading {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('img/loading.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modalLoading {
+    display: block;
+}
+
+.modalError404 {
+	display: none;
+}
+
+body.error404 .modalError404 {
+	text-align: center;
+	display: block;
+}
+
+body.error404 .main-md {
+	display: none;
+}
+
+.enormous-font{
+	font-size: 10em;
+	margin-bottom: 0em;
+}
+
+.big-font{
+	font-size: 2em;
 }
