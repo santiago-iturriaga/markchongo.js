@@ -5,6 +5,7 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 75px;
+  font-size: 18px;
 }
 
 
@@ -37,7 +38,7 @@ body {
 }
 
 .navbar-cecal .navbar-brand {
-  font-size: 50px;
+  font-size: 55px;
   height: 75px;
   line-height: 75px;
 }
@@ -171,7 +172,7 @@ body.error404 .modalError404 {
 	display: block;
 }
 
-body.error404 .main-md {
+body.error404 .main-container {
 	display: none;
 }
 
