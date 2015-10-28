@@ -1,60 +1,87 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Bootstrap 3 Affix Sidebar</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.flatty.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="index.css" rel="stylesheet">
+	</head>
+	<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> -->
+      <a href="/" class="navbar-brand"></a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</nav>
 
-    <title>Markchongo</title>
-
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <!--<link rel="stylesheet" href="css/wiky.css">-->
-    <link rel="stylesheet" href="dashboard.css" >
-
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <script src="js/marked.js"></script>
-    <!--<script src="js/instaview.js"></script>-->
-    <!--<script src="js/wiky.js"></script>-->
-    <!--<script src="js/micromarkdown.js"></script>-->
-    <script src="js/markchongo.js"></script>
-</head>
-
-<body>
-    <nav class="navbar navbar-cecal navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">CeCal - High Performance Computing</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse navbar-logo">
-              <div class="nav navbar-nav navbar-right">
-                <a href="https://www.fing.edu.uy/inco/grupos/cecal/"><img src="img/logo_cecal_75.png" /></a>
-                <a href="https://www.fing.edu.uy/"><img src="img/logo_fing_75.png" /></a>
-                <a href="http://www.universidad.edu.uy/"><img src="img/logo_udelar_75.png" /></a>
+<div id="masthead">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>Grupo de computación de alto desempeño
+            <p class="lead">Centro de cálculo</p>
+          </h1>
+        </div>
+        <div class="col-md-5">
+            <div class="well well-lg">
+              <div class="row">
+                <div class="col-sm-4">
+									<a href="https://www.fing.edu.uy/inco/grupos/cecal"><img src="img/logo_cecal_75.png" class="img-responsive" /></a>
+                </div>
+                <div class="col-sm-4">
+	              	<a href="https://www.fing.edu.uy/"><img src="img/logo_fing_75.png" class="img-responsive" /></a>
+                </div>
+								<div class="col-sm-4">
+	              	<a href="http://www.universidad.edu.uy/"><img src="img/logo_udelar_75.png" class="img-responsive" /></a>
+                </div>
               </div>
             </div>
         </div>
-    </nav>
+      </div>
+  </div><!--/container-->
+</div><!--/masthead-->
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2 col-sm-2 sidebar sidebar-container">
-            </div>
-            <div class="col-md-10 col-md-offset-2 col-sm-4 col-sm-offset-2 main main-container">
-            </div>
-        </div>
-    </div>
+<!--main-->
+<div class="container">
+	<div class="row">
+      <!--left-->
+      <div class="col-md-3 sidebar-container" id="sidebar">
 
-    <div class="modalError404">
-        <p class="enormous-font bree-font"> 404 </p>
-        <p class="big-font"> This is just embarrassing; this page does not exist... </p>
-        <hr>
-        <!--<p class="big-font"> Let’s return to the <a href="#" class="underline">home page</a></p>-->
-    </div>
+      </div><!--/left-->
 
-    <div class="modalLoading"><!-- Loading... --></div>
-</body>
+      <!--right-->
+      <div class="col-md-9 main-container">
 
+      </div><!--/right-->
+  	</div><!--/row-->
+</div><!--/container-->
+
+
+
+	<!-- script references -->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/marked.js"></script>
+		<script src="js/markchongo.js"></script>
+	</body>
 </html>

@@ -156,7 +156,8 @@ function loadCurrentState() {
 
             // Code to run regardless of success or failure
             complete: function( xhr, status ) {
-                $($( ".sidebar-container" ).children()[0]).addClass("nav nav-sidebar");
+                //$($( ".sidebar-container" ).children()[0]).addClass("nav nav-sidebar");
+                $( ".sidebar-container" ).children().addClass("nav nav-sidebar");
             }
         });
 

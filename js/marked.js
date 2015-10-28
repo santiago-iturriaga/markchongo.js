@@ -624,10 +624,8 @@ InlineLexer.prototype.output = function(src) {
   		var filename = cap[2].substr(0,cap[2].length - filename_ext.length - 1);
 
       if (filename_ext == 'md') {
-        out += this.outputLink(cap, {
-          href: "javascript:goToPage(\'" + cap[2] + "\');",
-          title: cap[3]
-        });
+        // Added for markchongo.js
+        out += '<a href="javascript:goToPage(\'' + cap[2] + '\');" class="__page_' + filename + '">' + cap[1] + '</a>\n';
       } else {
         out += this.outputLink(cap, {
           href: cap[2],
