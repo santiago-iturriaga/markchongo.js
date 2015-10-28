@@ -6,12 +6,14 @@ var USE_HASH_LOCATION = true;
 var CURRENT_PAGE = null;
 
 function defaultExtension() {
-    //return ".md";
-    return ".mw";
+    return ".md";
+    //return ".mw";
 }
 
 function toHtml(markup) {
-    return InstaView.convert(markup);
+    var html = '';
+    html = marked(markup);
+    return html
     //return micromarkdown.parse(markup);
     //return wiky.process(markup);
 }
@@ -66,7 +68,7 @@ function loadMainMarkdown(filename) {
             // the response is passed to the function
             success: function( markup ) {
                 $( document ).scrollTop(0);
-                $( ".main-container" ).html(toHtml(markup));                
+                $( ".main-container" ).html(toHtml(markup));
                 $( "body" ).removeClass("error404");
                 setCurrentPageActiveStyle();
             },
@@ -139,7 +141,7 @@ function loadCurrentState() {
             // Code to run if the request succeeds;
             // the response is passed to the function
             success: function( markup ) {
-                $( ".sidebar-container" ).html(toHtml(markup)); 
+                $( ".sidebar-container" ).html(toHtml(markup));
             },
 
             // Code to run if the request fails; the raw request and

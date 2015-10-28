@@ -50,16 +50,6 @@ body {
   padding-right: 10px;
 }
 
-/* Hide for mobile, show later */
-.navbar-logo {
-  display: none;
-}
-@media (min-width: 1024px) {
-  .navbar-logo {
-    display: inline;
-  }
-}
-
 /*
  * Sidebar
  */
@@ -68,7 +58,7 @@ body {
 .sidebar {
   display: none;
 }
-@media (min-width: 990px) {
+@media (min-width: 512px) {
   .sidebar {
     position: fixed;
     top: 75px;
