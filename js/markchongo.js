@@ -5,17 +5,21 @@
 var USE_HASH_LOCATION = true;
 var CURRENT_PAGE = null;
 
-function defaultExtension() {
-    return ".md";
-    //return ".mw";
+var DEFAULT_PREFIX = ''; //'docs/';
+var DEFAULT_EXT = '.md';
+
+function getPageUrl(filename) {
+    return DEFAULT_PREFIX + filename + DEFAULT_EXT;
 }
 
 function toHtml(markup) {
     var html = '';
+
     html = marked(markup);
+    //html = micromarkdown.parse(markup);
+    //html = wiky.process(markup);
+
     return html
-    //return micromarkdown.parse(markup);
-    //return wiky.process(markup);
 }
 
 function goToPage(filename) {
@@ -104,7 +108,7 @@ function loadCurrentState() {
         if (hash.length > 1) {
             newPage = hash.substring(1);
         } else {
-            newPage = "main"+defaultExtension();
+            newPage = getPageUrl('main');
         }
     } else {
         var queryParameters = {}, queryString = location.search.substring(1),
@@ -117,7 +121,7 @@ function loadCurrentState() {
 
         if (!queryParameters['p']) {
             // No page found. Go to default.
-            goToPage('main'+defaultExtension());
+            goToPage(getPageUrl('main'));
         } else {
             newPage = queryParameters['p'];
         }
@@ -127,7 +131,7 @@ function loadCurrentState() {
         // Using the core $.ajax() method
         $.ajax({
             // The URL for the request
-            url: "sidebar"+defaultExtension(),
+            url: getPageUrl('sidebar'),
 
             // The data to send (will be converted to a query string)
             data: {},
@@ -180,4 +184,8 @@ $(window).on('hashchange', function() {
 
 $(document).ready(function() {
     loadCurrentState();
+
+    document.title = TITULO;
+    $('#title-page').html(TITULO);
+    $('#sub-title-page').html(SUB_TITULO);
 });
