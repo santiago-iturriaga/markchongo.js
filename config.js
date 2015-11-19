@@ -1,2 +1,2 @@
-var TITULO = 'Grupo de computación de alto desempeño';
-var SUB_TITULO = 'Centro de cálculo';
+var TITULO = 'Energy-aware scheduling in heterogeneous computing systems';
+var SUB_TITULO = 'Master in Computer Science, PEDECIBA';
