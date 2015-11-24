@@ -3,9 +3,9 @@
 Markchongo is yet another javascript website engine using markdown. It is fully file-based and client-based using javascript for markdown processing.
 
 Based on:
-Bootstrap http://getbootstrap.com/
-JQuery https://jquery.com/
-Marked https://github.com/chjj/marked
+* Bootstrap http://getbootstrap.com/
+* JQuery https://jquery.com/
+* Marked https://github.com/chjj/marked
 
 ## Configuring Markchongo.js
 
