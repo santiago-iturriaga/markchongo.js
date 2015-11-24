@@ -185,7 +185,7 @@ $(window).on('hashchange', function() {
 $(document).ready(function() {
     loadCurrentState();
 
-    document.title = TITULO;
-    $('#title-page').html(TITULO);
-    $('#sub-title-page').html(SUB_TITULO);
+    document.title = TITLE;
+    $('#title-page').html(TITLE);
+    $('#sub-title-page').html(SUB_TITLE);
 });
