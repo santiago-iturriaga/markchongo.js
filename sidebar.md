@@ -1,4 +1,5 @@
 * [Home page](main.md)
 * [Page 1](page1.md)
 * [Page 2](page2.md)
-* [Search engine](https://www.google.com)
+* [Readme](README.md)
+* [External link example](https://www.google.com)

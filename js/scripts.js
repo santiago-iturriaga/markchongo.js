@@ -8,15 +8,15 @@ $(document).ready(function(){/* activate sidebar */
 
   /* activate scrollspy menu */
   /*var $body   = $(document.body);
-  var navHeight = $('.navbar').outerHeight(true) + 10;*/
+  var navHeight = $('.navbar').outerHeight(true) + 10;
 
-  /*$body.scrollspy({
-  	target: '#leftCol',
+  $body.scrollspy({
+  	target: '#rightCol',
   	offset: navHeight
   });*/
 
   /* smooth scrolling sections */
-  $('a[href*=#]:not([href=#])').click(function() {
+  /*$('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -27,5 +27,5 @@ $(document).ready(function(){/* activate sidebar */
           return false;
         }
       }
-  });
+  });*/
 });

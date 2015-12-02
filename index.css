@@ -14,11 +14,12 @@ body {
 }
 
 #masthead {
- min-height:150px;
+ /*min-height:225px;*/
+ min-height:100px;
 }
 
 #masthead h1 {
- font-size: 30px;
+ font-size: 50px;
  line-height: 1;
  padding-top:20px;
 }
@@ -28,47 +29,37 @@ body {
  display: none;
 }
 
-@media screen and (min-width: 1000px) {
-  #masthead {
-   min-height:225px;
-  }
+.sidebar-container {
+  display: none;
+}
 
+.sidebar-container li.active {
+  /*border:0 #eee solid;*/
+  border:0 #111155 solid;
+  border-right-width:5px;
+}
+
+/*.navbar-collapse.collapse {
+    display: block !important;
+}*/
+
+@media screen and (min-width: 1000px) {
   #masthead .well {
     display: block;
   }
 
-  #masthead h1 {
-    font-size: 50px;
+  .sidebar-container {
+    display: block;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
   }
 }
 
 .navbar-bright {
  background-color:#111155;
  color:#fff;
-}
-
-.affix-top,.affix{
-  position: static;
-}
-
-@media (min-width: 1000px) {
-  #sidebar.affix-top {
-    position: static;
-  	margin-top:30px;
-  	width:228px;
-  }
-
-  #sidebar.affix {
-    position: fixed;
-    top:70px;
-    width:228px;
-  }
-}
-
-#sidebar li.active {
-  /*border:0 #eee solid;*/
-  border:0 #111155 solid;
-  border-right-width:5px;
 }
 
 /* Start by setting display:none to make this hidden.
