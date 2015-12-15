@@ -1,0 +1,116 @@
+/*
+A Bootstrap 3.1 affix sidebar template
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+body {
+ padding-top:50px;
+}
+
+#masthead {
+ /*min-height:225px;*/
+ min-height:100px;
+}
+
+#masthead h1 {
+ font-size: 50px;
+ line-height: 1;
+ padding-top:20px;
+}
+
+#masthead .well {
+ margin-top:8%;
+ display: none;
+}
+
+.sidebar-container {
+  display: none;
+}
+
+.sidebar-container li.active {
+  /*border:0 #eee solid;*/
+  border:0 #111155 solid;
+  border-right-width:5px;
+}
+
+/*.navbar-collapse.collapse {
+    display: block !important;
+}*/
+
+@media screen and (min-width: 1000px) {
+  #masthead .well {
+    display: block;
+  }
+
+  .sidebar-container {
+    display: block;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+}
+
+.navbar-bright {
+ background-color:#111155;
+ color:#fff;
+}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modalLoading {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+                url('img/loading.gif')
+                50% 50%
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modalLoading {
+    display: block;
+}
+
+.modalError404 {
+	display: none;
+}
+
+body.error404 .modalError404 {
+	text-align: center;
+	display: block;
+}
+
+body.error404 .main-container {
+	display: none;
+}
+
+.enormous-font{
+	font-size: 10em;
+	margin-bottom: 0em;
+}
+
+.big-font{
+	font-size: 2em;
+}
