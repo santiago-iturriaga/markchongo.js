@@ -1,2 +1,2 @@
-var TITULO = 'Energy-aware scheduling in heterogeneous computing systems';
-var SUB_TITULO = 'Master in Computer Science, PEDECIBA';
+var TITLE = 'Energy-aware scheduling in heterogeneous computing systems';
+var SUB_TITLE = 'Master in Computer Science, PEDECIBA';

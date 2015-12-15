@@ -146,6 +146,7 @@ function loadCurrentState() {
             // the response is passed to the function
             success: function( markup ) {
                 $( ".sidebar-container" ).html(toHtml(markup));
+                $( ".topbar-container" ).html(toHtml(markup));
             },
 
             // Code to run if the request fails; the raw request and
@@ -162,10 +163,10 @@ function loadCurrentState() {
             complete: function( xhr, status ) {
                 //$($( ".sidebar-container" ).children()[0]).addClass("nav nav-sidebar");
                 $( ".sidebar-container" ).children().addClass("nav nav-sidebar");
+                $( ".topbar-container" ).children().addClass("nav navbar-nav");              
+                loadMainMarkdown(newPage);
             }
         });
-
-        loadMainMarkdown(newPage);
     }
 }
 
@@ -185,7 +186,7 @@ $(window).on('hashchange', function() {
 $(document).ready(function() {
     loadCurrentState();
 
-    document.title = TITULO;
-    $('#title-page').html(TITULO);
-    $('#sub-title-page').html(SUB_TITULO);
+    document.title = TITLE;
+    $('#title-page').html(TITLE);
+    $('#sub-title-page').html(SUB_TITLE);
 });
