@@ -7,6 +7,8 @@ Based on:
 * JQuery https://jquery.com/
 * Marked https://github.com/chjj/marked
 
+Sample web site: http://santiago-iturriaga.github.io/markchongo.js/
+
 ## Configuring Markchongo.js
 
 The only mandatory markdown files are main.md and sidebar.md
