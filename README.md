@@ -1,4 +1,4 @@
-https://github.com/santiago-iturriaga/markchongo.js/blob/master/config.js/logo.png
+# Markchongo.js
 
 Markchongo is yet another javascript website engine using markdown. It is fully file-based and client-based using javascript for markdown processing.
 
