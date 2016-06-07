@@ -621,9 +621,12 @@ InlineLexer.prototype.output = function(src) {
       this.inLink = true;
 
       var filename_ext =cap[2].split('.').pop();
-  		var filename = cap[2].substr(0,cap[2].length - filename_ext.length - 1);
+      var filename = cap[2].substr(0,cap[2].length - filename_ext.length - 1);
 
       if (filename_ext == 'md') {
+        // Added for markchongo.js
+        out += '<a href="javascript:goToPage(\'' + cap[2] + '\');" class="__page_' + filename + '">' + cap[1] + '</a>\n';
+      } else if (filename_ext == 'bib') {
         // Added for markchongo.js
         out += '<a href="javascript:goToPage(\'' + cap[2] + '\');" class="__page_' + filename + '">' + cap[1] + '</a>\n';
       } else {
