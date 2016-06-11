@@ -78,15 +78,21 @@ function loadMainMarkdown(filename) {
                 
                 var filename_ext = '.' + CURRENT_PAGE.split('.').pop();
                 var filename = CURRENT_PAGE.substr(0,CURRENT_PAGE.length - filename_ext.length - 1);
-                
+
+                $( ".main-container" ).html('');
+                $( "#pubTable" ).empty();
+                $( "#bibtex" ).empty();
+                $( "#bibtex-container" ).html('');
+
                 if (filename_ext == BIBTEX_EXT) {
-                    $( ".main-container" ).html('');
                     $( "#bibtex-container" ).show();
+                    $( "#bibtex-container" ).append($("<table id='pubTable' class='display'></table>"));
+                    $( "#bibtex-container" ).append($("<pre id='bibtex'></pre>"));
                     $( "#bibtex" ).html(markup);
-                    bibtexify("#bibtex", "pubTable", {'tweet': 'vkaravir'});
-                } else {                
-                    $( ".main-container" ).html(toHtml(markup));
+                    bibtexify("#bibtex", "pubTable");
+                } else {
                     $( "#bibtex-container" ).hide();
+                    $( ".main-container" ).html(toHtml(markup));
                 }
                 $( "body" ).removeClass("error404");
                 setCurrentPageActiveStyle();
