@@ -1547,7 +1547,7 @@ BibTex.prototype = {
      */
     '_removeCurlyBraces': function(value)
     {
-        //First we save the delimiters
+        /*//First we save the delimiters
         var beginningdels = array_keys(this._delimiters);
         var firstchar     = substr(value, 0, 1);
         var lastchar      = substr(value, -1, 1);
@@ -1569,7 +1569,11 @@ BibTex.prototype = {
         var replacement = '12';
         value       = value.replace(/([^\\\\])\{(.*?[^\\\\])\}/, replacement);
         //Reattach delimiters
-        value       = begin+value+end;
+        value       = begin+value+end;*/
+        
+        value.replace('{','');
+        value.replace('}','');
+        
         return value;
     },
     
@@ -2513,9 +2517,11 @@ var bibtexify = (function($) {
         // converts the given author data into HTML
         authors2html: function(authorData) {
             var authorsStr = '';
-            for (var index = 0; index < authorData.length; index++) {
-                if (index > 0) { authorsStr += ", "; }
-                authorsStr += authorData[index].last;
+            if (authorData) {
+                for (var index = 0; index < authorData.length; index++) {
+                    if (index > 0) { authorsStr += ", "; }
+                    authorsStr += authorData[index].last;
+                }
             }
             return htmlify(authorsStr);
         },
@@ -2607,10 +2613,17 @@ var bibtexify = (function($) {
                 entryData.number + ". " + entryData.type + ".";
         },
         book: function(entryData) {
-            return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
-                " <em>" + entryData.title + "<\/em>, " +
-                entryData.publisher + ", " + entryData.year +
-                ((entryData.issn)?", ISBN: " + entryData.issn + ".":".");
+            if (!entryData.author && entryData.editor) {
+                return " <em>" + entryData.title + "<\/em>, " +
+                    ((entryData.editor)?" Edited by " + entryData.editor + ", ":"") +
+                    entryData.publisher + ", " + entryData.year +
+                    ((entryData.issn)?", ISBN: " + entryData.issn + ".":".");
+            } else {
+                return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
+                    " <em>" + entryData.title + "<\/em>, " +
+                    entryData.publisher + ", " + entryData.year +
+                    ((entryData.issn)?", ISBN: " + entryData.issn + ".":".");
+            }
         },
         inbook: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
@@ -2682,7 +2695,7 @@ var bibtexify = (function($) {
     };
     var bibproto = Bib2HTML.prototype;
     bibproto.initialize = function initialize(data) {
-        var bibtex = new BibTex();
+        var bibtex = new BibTex({'removeCurlyBraces':true});
         bibtex.content = data;
         bibtex.parse();
         var bibentries = [], len = bibtex.data.length;
@@ -2772,7 +2785,8 @@ var bibtexify = (function($) {
             return 0;
         });
         var chartIdSelector = "#" + this.$pubTable[0].id + "pubchart";
-        var pubHeight = $(chartIdSelector).height()/max - 2;
+        //var pubHeight = ($(chartIdSelector).height()-2)/max;
+        var pubHeight = (100-2)/max;
         var styleStr = chartIdSelector +" .year { width: " +
                         (100.0/yearstats.length) + "%; }" +
                         chartIdSelector + " .pub { height: " + pubHeight + "px; }";
@@ -2788,7 +2802,7 @@ var bibtexify = (function($) {
             types.sort(function(x, y) {
               return bib2html.importance[y] - bib2html.importance[x];
             });
-            str += '<div class="filler" style="height:' + ((pubHeight+2)*(max-sum)) + 'px;"></div>';
+            //str += '<div class="filler" style="height:' + ((pubHeight+2)*(max-sum)) + 'px;"></div>';
             for (var i = 0; i < types.length; i++) {
                 var type = types[i];
                 if (legendTypes.indexOf(type) === -1) {
