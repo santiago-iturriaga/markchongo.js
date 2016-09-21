@@ -25,6 +25,13 @@
        inkscape:vp_z="864.22142 : 477.67347 : 1"
        inkscape:persp3d-origin="492.17417 : 302.27977 : 1"
        id="perspective3340" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="81.976823 : 258.95341 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="826.07133 : 258.95341 : 1"
+       inkscape:persp3d-origin="454.02406 : 83.559711 : 1"
+       id="perspective3340-4" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -34,15 +41,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="540.54093"
-     inkscape:cy="613.80185"
+     inkscape:cx="306.18554"
+     inkscape:cy="611.78154"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="997"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -52,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -121,5 +128,84 @@
          d="m 303.97469,224.28612 17.1726,-32.72992 0,21.91961 -17.1726,30.85739 z"
          points="321.14729,191.5562 321.14729,213.47581 303.97469,244.3332 303.97469,224.28612 " />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="310.34952"
+       y="466.1795"
+       id="text3336-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3338-8"
+         x="310.34952"
+         y="466.1795"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat">markchongo.js</tspan></text>
+    <g
+       sodipodi:type="inkscape:box3d"
+       id="g3342-8"
+       inkscape:perspectiveID="#perspective3340-4"
+       inkscape:corner0="1.0236702 : 0.88449306 : 0 : 1"
+       inkscape:corner7="0.85079384 : 0.84392439 : 0.082719721 : 1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path3354-5"
+         style="fill:#e9e9ff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:box3dsidetype="11"
+         d="m 287.82595,456.76679 18.40507,-30.09933 0,20.98184 -18.40507,28.3773 z"
+         points="306.23102,426.66746 306.23102,447.6493 287.82595,476.0266 287.82595,456.76679 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path3344-2"
+         style="fill:#353564;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:box3dsidetype="6"
+         d="m 265.82458,443.00618 0,20.04707 22.00137,12.97335 0,-19.25981 z"
+         points="265.82458,463.05325 287.82595,476.0266 287.82595,456.76679 265.82458,443.00618 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path3346-3"
+         style="fill:#4d4d9f;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:box3dsidetype="5"
+         d="m 265.82458,443.00618 17.1726,-32.72992 23.23384,16.3912 -18.40507,30.09933 z"
+         points="282.99718,410.27626 306.23102,426.66746 287.82595,456.76679 265.82458,443.00618 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path3352-5"
+         style="fill:#afafde;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:box3dsidetype="13"
+         d="m 265.82458,463.05325 17.1726,-30.85739 23.23384,15.45344 -18.40507,28.3773 z"
+         points="282.99718,432.19586 306.23102,447.6493 287.82595,476.0266 265.82458,463.05325 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path3350-5"
+         style="fill:#d7d7ff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:box3dsidetype="14"
+         d="m 282.99718,410.27626 0,21.9196 23.23384,15.45344 0,-20.98184 z"
+         points="282.99718,432.19586 306.23102,447.6493 306.23102,426.66746 282.99718,410.27626 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path3348-8"
+         style="fill:#8686bf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:box3dsidetype="3"
+         d="m 265.82458,443.00618 17.1726,-32.72992 0,21.9196 -17.1726,30.85739 z"
+         points="282.99718,410.27626 282.99718,432.19586 265.82458,463.05325 265.82458,443.00618 " />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="310.63074"
+       y="433.06216"
+       id="text3336-3-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3338-8-1"
+         x="310.63074"
+         y="433.06216"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;font-family:Montserrat;-inkscape-font-specification:Montserrat">powered by</tspan></text>
   </g>
 </svg>
