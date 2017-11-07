@@ -1,4 +1,4 @@
-* [Home page](main.md)
+* [About us](main.md)
 * [People](people.md)
 * [Research](research.md)
 * [Publications](publications.bib)

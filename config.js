@@ -1,2 +1,2 @@
-var TITLE = 'Title';
-var SUB_TITLE = 'Sub title';
+var TITLE = 'Centro de Cálculo';
+var SUB_TITLE = 'High performance computing group';
