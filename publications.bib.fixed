@@ -1,0 +1,511 @@
+@incollection{Alaniz2014,
+ author = {Marcelo Alaniz and Sergio Nesmachnow and Brice Goglin
+and Santiago Iturriaga and Veronica Gil Gosta and
+Marcela Printista},
+ booktitle = {High Performance Computing},
+ doi = {10.1007/978-3-662-45483-1_12},
+ pages = {158--172},
+ publisher = {Springer Science $\mathplus$ Business Media},
+ title = {{{MBSPDiscover}}: An Automatic Benchmark for {{MultiBSP}}
+Performance Analysis},
+ url = {http://dx.doi.org/10.1007/978-3-662-45483-1_12},
+ year = {2014}
+}
+
+@article{ALN_Parallel_ITOR_2013,
+ author = {E. Alba and G. Luque and S. Nesmachnow},
+ journal = {Int.~Transactions in Operational Research},
+ number = {1},
+ pages = {1--48},
+ title = {Parallel Metaheuristics: Recent Advances and New
+Trends},
+ volume = {20},
+ year = {2013}
+}
+
+@book{CARLA_2014,
+ doi = {10.1007/978-3-662-45483-1},
+ editor = {Gonzalo Hern{\'{a}}ndez and Carlos Jaime Barrios
+Hern{\'{a}}ndez and Gilberto D{\'{\i}}az and Carlos
+Garc{\'{\i}}a Garino and Sergio Nesmachnow and
+Tom{\'{a}}s P{\'{e}}rez-Acle and Mario Storti and
+Mariano V{\'{a}}zquez},
+ publisher = {Springer Berlin Heidelberg},
+ title = {High Performance Computing},
+ url = {http://dx.doi.org/10.1007/978-3-662-45483-1},
+ year = {2014}
+}
+
+@inproceedings{CReSTIC-2688,
+ address = {Neuchatel, Suisse},
+ author = {Javier Rey and Matias Cogorno and Sergio Nesmachnow
+and Luiz Angelo Steffenel},
+ booktitle = {Conf{\'e}rence d’informatique en Parall{\'e}lisme, Architecture et Syst{\`e}me},
+ month = {apr},
+ title = {Fast Prototyping of Map-Reduce Applications with
+Docker-Hadoop},
+ year = {2014}
+}
+
+@incollection{DaSilva2014,
+ author = {Miguel Da Silva and Sergio Nesmachnow and Maximiliano
+Geier and Esteban Mocskos and Juan Angiolini and
+Valeria Levi and Alfredo Cristobal},
+ booktitle = {High Performance Computing},
+ doi = {10.1007/978-3-662-45483-1_9},
+ pages = {113--127},
+ publisher = {Springer Science $\mathplus$ Business Media},
+ title = {Efficient Fluorescence Microscopy Analysis over a
+Volunteer Grid/Cloud Infrastructure},
+ url = {http://dx.doi.org/10.1007/978-3-662-45483-1_9},
+ year = {2014}
+}
+
+@inproceedings{DaSilva2014,
+ authors = {S. Nesmachnow, M. Da Silva},
+ title = {Semi-automatic historical climate data recovering
+using a distributed volunteer grid infrastructure}
+}
+
+@inproceedings{DN_2L_META_2014,
+ author = {B. Dorronsoro and S. Nesmachnow},
+ booktitle = {International Conference on Metaheuristics and Nature
+Inspired Computing},
+ title = {A Two-level Job Scheduler for Large Distributed
+Systems},
+ url = {http://meta2014.sciencesconf.org/43260},
+ year = {2014}
+}
+
+@article{DN_Special_Cluster_2014,
+ author = {B. Dorronsoro and S. Nesmachnow},
+ journal = {Cluster Computing},
+ title = {Special Issue on Soft Computing Techniques in Cluster
+and Grid Computing Systems},
+ year = {2014}
+}
+
+@article{Dorronsoro2014,
+ author = {Bernab{\'{e}} Dorronsoro and Sergio Nesmachnow},
+ doi = {10.1007/s10586-013-0336-x},
+ journal = {Cluster Computing},
+ month = {feb},
+ number = {2},
+ pages = {153--154},
+ publisher = {Springer Science $\mathplus$ Business Media},
+ title = {Special issue on soft computing techniques in cluster
+and grid computing systems},
+ url = {http://dx.doi.org/10.1007/s10586-013-0336-x},
+ volume = {17},
+ year = {2014}
+}
+
+@article{Dorronsoro2014_SC,
+ author = {B. Dorronsoro and S. Nesmachnow and J. Taheri and A.
+Zomaya and E-G. Talbi and P. Bouvry},
+ doi = {10.1016/j.suscom.2014.08.003},
+ journal = {Sustainable Computing: Informatics and Systems},
+ month = {dec},
+ number = {4},
+ pages = {252--261},
+ publisher = {Elsevier {BV}},
+ title = {A hierarchical approach for energy-efficient
+scheduling of large workloads in multicore distributed
+systems},
+ url = {http://dx.doi.org/10.1016/j.suscom.2014.08.003},
+ volume = {4},
+ year = {2014}
+}
+
+@inproceedings{Fagundez2014,
+ author = {Gabriel Fagundez and Renzo Massobrio and Sergio
+Nesmachnow},
+ booktitle = {2014 {XL} Latin American Computing Conference
+({CLEI})},
+ doi = {10.1109/clei.2014.6965163},
+ month = {sep},
+ publisher = {Institute of Electrical {\&} Electronics Engineers
+({IEEE})},
+ title = {Online taxi sharing optimization using evolutionary
+algorithms},
+ url = {http://dx.doi.org/10.1109/CLEI.2014.6965163},
+ year = {2014}
+}
+
+@article{Frascarelli2014,
+ author = {Daniel Frascarelli and Sergio Nesmachnow and Gonzalo
+Tancredi},
+ doi = {10.1109/mc.2014.249},
+ journal = {Computer},
+ month = {sep},
+ number = {9},
+ pages = {34--39},
+ publisher = {Institute of Electrical {\&} Electronics Engineers
+({IEEE})},
+ title = {High-Performance Computing of Self-Gravity for Small
+Solar System Bodies},
+ url = {http://dx.doi.org/10.1109/MC.2014.249},
+ volume = {47},
+ year = {2014}
+}
+
+@article{INDB_MLS_CIJ_2013,
+ author = {{S. Iturriaga, S. Nesmachnow, B. Dorronsoro} and P.
+Bouvry},
+ journal = {Computing and Informatics Journal},
+ number = {2},
+ pages = {273--294},
+ title = {Energy Efficient Scheduling in Heterogeneous Systems
+with a Parallel Multiobjective Local Search},
+ volume = {32},
+ year = {2013}
+}
+
+@inproceedings{INDTB_VMMP_3PGCIC_2013,
+ address = {Compiegne, France},
+ author = {S. Iturriaga and S. Nesmachnow and B. Dorronsoro and
+E. G. Talbi and P. Bouvry},
+ booktitle = {8$^{th}$ Int.~Conf.~on P2P, Parallel, Grid, Cloud and
+Internet Computing},
+ pages = {594--599},
+ title = {A Parallel Hybrid Evolutionary Algorithm for the
+Optimization of Broker Virtual Machines Subletting in
+Cloud Systems},
+ year = {2013}
+}
+
+@inproceedings{IRNDB_AEDB_NDIC_2013,
+ author = {{S. Iturriaga, P. Ruiz, S. Nesmachnow, B. Dorronsoro}
+and P. Bouvry},
+ title = {A Parallel Multi-objective Local Search for {AEDB}
+Protocol Tuning}
+}
+
+@article{Iturriaga2014,
+ author = {Santiago Iturriaga and Sergio Nesmachnow and Patricia
+Ruiz and Pascal Bouvry and Bernab\'e Dorronsoro},
+ doi = {10.1504/IJAHUC.2014.065775},
+ journal = {International Journal of Ad Hoc and Ubiquitous
+Computing},
+ month = {jan},
+ number = {2},
+ pages = {144--161},
+ publisher = {Inderscience Publishers},
+ title = {{AEDB} protocol tuning with a fast efficient parallel
+multi–objective local search},
+ url = {http://inderscience.metapress.com/content/F078348H38366864},
+ volume = {17},
+ year = {2014}
+}
+
+@article{Iturriaga2016,
+ author = {Santiago Iturriaga and Sergio Nesmachnow},
+ doi = {10.3390/electronics5040071},
+ issn = {2079-9292},
+ journal = {Electronics},
+ number = {4},
+ pages = {1--16},
+ title = {Scheduling Energy Efficient Data Centers Using
+Renewable Energy},
+ url = {http://www.mdpi.com/2079-9292/5/4/71},
+ volume = {5},
+ year = {2016}
+}
+
+@inproceedings{Massobrio2014,
+ author = {Renzo Massobrio and Gabriel Fagundez and Sergio
+Nesmachnow},
+ booktitle = {2014 {VIII} ALIO/EURO Workshop on Applied
+Combinatorial Optimization},
+ doi = {},
+ month = {dec},
+ publisher = {Institute of Electrical {\&} Electronics Engineers
+({IEEE})},
+ title = {A parallel micro evolutionary algorithm for taxi
+sharing optimization},
+ url = {http://www.fing.edu.uy/en/alio-euro-2014},
+ year = {2014}
+}
+
+@inproceedings{MNH_CLCAR_2013,
+ author = {E. Mocskos and Nesmachnow S. and G. Hernández},
+ title = {{HPCLatAm}: Towards the integration of the research
+communities on High Performance Computing in {LA}
+Southern Cone}
+}
+
+@article{N_EFFICIENT_GREEN_2013,
+ author = {S. Nesmachnow},
+ journal = {Green Computing Report},
+ note = {Online June 2013},
+ title = {Energy-efficient planning for heterogeneous computing
+systems},
+ year = {2013}
+}
+
+@article{N_Metaheuristics_Inderscience_2013,
+ author = {S. Nesmachnow},
+ journal = {Inderscience Newsletter},
+ month = {Summer},
+ title = {Metaheuristics: accurate and efficient soft computing
+methods for optimization},
+ year = {2013}
+}
+
+@article{N_Planificacion_KS_2014,
+ author = {Sergio Nesmachnow},
+ journal = {Komputer Sapiens},
+ number = {1},
+ pages = {5--10},
+ title = {Planificacion de tareas en sistemas cluster, grid y
+cloud utilizando algoritmos evolutivos},
+ volume = {6},
+ year = {2014}
+}
+
+@article{N_PMOEA_HCSP_COA_2013,
+ author = {S. Nesmachnow},
+ issue = {2},
+ journal = {Computational Optimization and Applications},
+ pages = {515--544},
+ title = {Parallel multiobjective evolutionary algorithms for
+batch scheduling in heterogeneous computing and grid
+systems},
+ volume = {55},
+ year = {2013}
+}
+
+@inproceedings{NBA_QUANTUM_CLCAR_2013,
+ author = {Nesmachnow S. and Barreto M. and Abal G.},
+ title = {Shared and distributed memory implementations for
+parallel simulations of a quantum search algorithm to
+solve the 3-{SAT} problem}
+}
+
+@article{NDPB_Energy_JoGC_2013,
+ author = {S. Nesmachnow and B. Dorronsoro and J. Pecero and P.
+Bouvry},
+ journal = {Journal of Grid Computing},
+ number = {4},
+ pages = {653--680},
+ title = {Energy-Aware Scheduling on Multicore Heterogeneous
+Grid Computing Systems},
+ volume = {11},
+ year = {2013}
+}
+
+@inproceedings{NDS_GREEDY_HPCLATAM_2013,
+ author = {M. Da Silva and S. Nesmachnow},
+ title = {Greedy Scheduling for the {OurGrid} Middleware}
+}
+
+@inproceedings{NDS_GREEDY_HPCLATAM_2013,
+ author = {G. Usera and S. Nesmachnow and  {Brasileiro, F.} and
+M. Da Silva and García S.},
+ title = {Recovering historical climate records through grid
+computing}
+}
+
+@inproceedings{NDS_GREEDY_HPCLATAM_2013,
+ author = {{S. Nesmachnow, S. Iturriaga, B. Dorronsoro, E-G.
+Talbi} and P. Bouvry},
+ title = {List scheduling heuristics for virtual machine mapping
+in cloud systems}
+}
+
+@incollection{Nesmachnow2014,
+ author = {Sergio Nesmachnow and Cristian Perfumo and
+{\'{I}}{\~{n}}igo Goiri},
+ booktitle = {High Performance Computing},
+ doi = {10.1007/978-3-662-45483-1_10},
+ pages = {128--142},
+ publisher = {Springer Science $\mathplus$ Business Media},
+ title = {Multiobjective Energy-Aware Datacenter Planning
+Accounting for Power Consumption Profiles},
+ url = {http://dx.doi.org/10.1007/978-3-662-45483-1_10},
+ year = {2014}
+}
+
+@incollection{Nesmachnow2014,
+ author = {S. Nesmachnow},
+ booktitle = {Encyclopedia of Information Science and Technology},
+ chapter = {727},
+ editor = {M. Khosrow-Pour},
+ pages = {7390--7399},
+ publisher = {IGI Global},
+ title = {Using metaheuristics as soft computing techniques for
+efficient optimization},
+ year = {2014}
+}
+
+@inproceedings{NGUB_DIGICLIMA_CLCAR_2013,
+ author = {Nesmachnow S. and S. García and G. Usera and F.
+Brasileiro},
+ title = {Grid Computing para la recuperación de datos
+climáticos}
+}
+
+@article{NI_PCHC_IJGUC_2013,
+ author = {S. Nesmachnow and S. Iturriaga},
+ journal = {International Journal of Grid and Utility Computing},
+ number = {1},
+ pages = {70--84},
+ title = {Multiobjective grid scheduling using a domain
+decomposition based parallel micro evolutionary
+algorithm},
+ volume = {4},
+ year = {2013}
+}
+
+@inproceedings{NIDTB_VMMP_HPCLATAM_2013,
+ author = {{S. Nesmachnow, S. Iturriaga, B. Dorronsoro, E-G.
+Talbi} and P. Bouvry},
+ title = {List scheduling heuristics for virtual machine mapping
+in cloud systems}
+}
+
+@article{NLA_Time_SPE_2013,
+ author = {S. Nesmachnow and F. Luna and E. Alba},
+ journal = {Software: Practice and Experience},
+ pages = {Online First},
+ title = {An empirical time analysis of evolutionary algorithms
+as C programs},
+ year = {2013}
+}
+
+@inproceedings{NPG_CLOUDNET_2014,
+ author = {Sergio Nesmachnow and Cristian Perfumo and Inigo
+Goiri},
+ booktitle = {2014 {IEEE} 3rd International Conference on Cloud
+Networking ({CloudNet})},
+ doi = {10.1109/cloudnet.2014.6968999},
+ month = {oct},
+ publisher = {Institute of Electrical {\&} Electronics Engineers
+({IEEE})},
+ title = {Controlling datacenter power consumption while
+maintaining temperature and {{QoS}} levels},
+ url = {http://dx.doi.org/10.1109/CloudNet.2014.6968999},
+ year = {2014}
+}
+
+@inproceedings{Ortega2014,
+ authors = {M. Ortega, S. Nesmachnow, V. Levi, J. Angiolini, E.
+Mocskos},
+ title = {{HPC} Applied to flourescence fluctuattion analysis:
+Contributing to unravel hidden dynamical processes}
+}
+
+@incollection{Paz2014,
+ author = {Claudio Paz and Sergio Nesmachnow and Julio H.
+Toloza},
+ booktitle = {High Performance Computing},
+ doi = {10.1007/978-3-662-45483-1_15},
+ pages = {206--220},
+ publisher = {Springer Science $\mathplus$ Business Media},
+ title = {A Parallel Multilevel Data Decomposition Algorithm for
+Orientation Estimation of Unmanned Aerial Vehicles},
+ url = {http://dx.doi.org/10.1007/978-3-662-45483-1_15},
+ year = {2014}
+}
+
+@inproceedings{SFCBSNKD_PERMARE_3PGCIC_2013,
+ author = {L. A. Steffenel and O. Flauzac and A. Char{\~a}o and
+P. Barcelos and B. Stein and S. Nesmachnow and M.
+Kirsch-Pinheiro and D. Diaz},
+ title = {{PER}-{MARE}: Adaptive Deployment of {MapReduce} over
+Pervasive Grids}
+}
+
+@article{Steffenel2014,
+ author = {L. Steffenel and O. Flauzac and A. Charao and P.
+Barcelos and B. Stein and G. Cassales and S. Nesmachnow
+and J. Rey and M. Cogorno and M. Kirsch-Pinheiro and C.
+Souveyet},
+ doi = {10.3844/jcssp.2014.2194.2210},
+ journal = {Journal of Computer Science},
+ month = {nov},
+ number = {11},
+ pages = {2194--2210},
+ publisher = {Science Publications},
+ title = {{{MAPREDUCE}} {{CHALLENGES}} {{ON}} {{PERVASIVE}} {{GRIDS}}},
+ url = {http://dx.doi.org/10.3844/jcssp.2014.2194.2210},
+ volume = {10},
+ year = {2014}
+}
+
+@inproceedings{Tchernykh2014,
+ author = {Andrei Tchernykh and Luz Lozano and Uwe Schwiegelshohn
+and Pascal Bouvry and Johnatan E. Pecero and Sergio
+Nesmachnow},
+ booktitle = {2014 {IEEE} 3rd International Conference on Cloud
+Networking ({CloudNet})},
+ doi = {10.1109/cloudnet.2014.6969013},
+ month = {oct},
+ publisher = {Institute of Electrical {\&} Electronics Engineers
+({IEEE})},
+ title = {Bi-objective online scheduling with quality of service
+for {{IaaS}} clouds},
+ url = {http://dx.doi.org/10.1109/CloudNet.2014.6969013},
+ year = {2014}
+}
+
+@inproceedings{Tchernykh2014,
+ author = {A. Tchernykh and L. Lozano and P. Bouvry and J. E.
+Pecero and U. Schwiegelshohn and S. Nesmachnow},
+ booktitle = {International Conference on High Performance Computing
+Simulation},
+ doi = {10.1109/HPCSim.2014.6903786},
+ month = {jul},
+ pages = {911--918},
+ title = {Energy-aware online scheduling: Ensuring quality of
+service for {IaaS} clouds},
+ year = {2014}
+}
+
+@article{TNA_OLSR_Cluster_2013,
+ author = {J. Toutouh and S. Nesmachnow and E. Alba},
+ journal = {Cluster Computing},
+ number = {3},
+ pages = {435--450},
+ title = {Fast energy-aware {OLSR} routing in {VANETs} by means of a
+parallel evolutionary algorithm},
+ volume = {16},
+ year = {2013}
+}
+
+@incollection{year={2014,
+ author = {Santiago Iturriaga and Sebastián García and Sergio
+Nesmachnow},
+ booktitle = {High Performance Computing},
+ doi = {10.1007/978-3-662-45483-1_11},
+ isbn = {9783-662-4548-2-4},
+ keywords = {HPC; scheduling; energy-aware; uncertainty},
+ language = {English},
+ pages = {143--157},
+ publisher = {Springer Berlin Heidelberg},
+ series = {Communications in Computer and Information Science},
+ title = {An Empirical Study of the Robustness of Energy-Aware
+Schedulers for High Performance Computing Systems under
+Uncertainty},
+ url = {http://dx.doi.org/10.1007/978-3-662-45483-1_11},
+ volume = {485}
+}
+
+@article{year={2015,
+ author = {Santiago Iturriaga and Sergio Nesmachnow and Francisco
+Luna and Enrique Alba},
+ doi = {10.1007/s11227-014-1315-6},
+ issn = {0920-8542},
+ journal = {The Journal of Supercomputing},
+ keywords = {Heterogeneous computing; Scheduling; GPU computing},
+ language = {English},
+ number = {2},
+ pages = {648--672},
+ publisher = {Springer US},
+ title = {A parallel local search in {CPU}/{GPU} for scheduling
+independent tasks on large heterogeneous computing
+systems},
+ url = {http://dx.doi.org/10.1007/s11227-014-1315-6},
+ volume = {71}
+}
+
