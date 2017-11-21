@@ -621,13 +621,14 @@ InlineLexer.prototype.output = function(src) {
       this.inLink = true;
 
       var filename_ext =cap[2].split('.').pop();
+      // Added for markchongo.js
       var filename = cap[2].substr(0,cap[2].length - filename_ext.length - 1);
 
+
+      // Added for markchongo.js
       if (filename_ext == 'md') {
-        // Added for markchongo.js
         out += '<a href="javascript:goToPage(\'' + cap[2] + '\');" class="__page_' + filename + '">' + cap[1] + '</a>\n';
-      } else if (filename_ext == 'bib') {
-        // Added for markchongo.js
+      } else if (filename_ext == 'bib') {  
         out += '<a href="javascript:goToPage(\'' + cap[2] + '\');" class="__page_' + filename + '">' + cap[1] + '</a>\n';
       } else {
         out += this.outputLink(cap, {
@@ -888,6 +889,10 @@ Renderer.prototype.link = function(href, title, text) {
     } catch (e) {
       return '';
     }
+    // Added for markchongo.js
+    /* if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0 || prot.indexOf('data:') === 0) {
+      return '';
+    } */
     if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0) {
       return '';
     }
@@ -1107,7 +1112,8 @@ function escape(html, encode) {
 }
 
 function unescape(html) {
-  return html.replace(/&([#\w]+);/g, function(_, n) {
+	// explicitly match decimal, hex, and named HTML entities 
+  return html.replace(/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/g, function(_, n) {
     n = n.toLowerCase();
     if (n === 'colon') return ':';
     if (n.charAt(0) === '#') {
