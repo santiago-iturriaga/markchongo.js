@@ -8,6 +8,9 @@ var CURRENT_PAGE = null;
 var DEFAULT_PREFIX = ''; //'docs/';
 var DEFAULT_EXT = '.md';
 
+var BIBTEX_PREFIX = '';
+var BIBTEX_EXT = '.bib';
+
 function getPageUrl(filename) {
     return DEFAULT_PREFIX + filename + DEFAULT_EXT;
 }
@@ -72,7 +75,25 @@ function loadMainMarkdown(filename) {
             // the response is passed to the function
             success: function( markup ) {
                 $( document ).scrollTop(0);
-                $( ".main-container" ).html(toHtml(markup));
+                
+                var filename_ext = '.' + CURRENT_PAGE.split('.').pop();
+                var filename = CURRENT_PAGE.substr(0,CURRENT_PAGE.length - filename_ext.length - 1);
+
+                $( ".main-container" ).html('');
+                $( "#pubTable" ).empty();
+                $( "#bibtex" ).empty();
+                $( "#bibtex-container" ).html('');
+
+                if (filename_ext == BIBTEX_EXT) {
+                    $( "#bibtex-container" ).show();
+                    $( "#bibtex-container" ).append($("<table id='pubTable' class='display'></table>"));
+                    $( "#bibtex-container" ).append($("<pre id='bibtex'></pre>"));
+                    $( "#bibtex" ).html(markup);
+                    bibtexify("#bibtex", "pubTable");
+                } else {
+                    $( "#bibtex-container" ).hide();
+                    $( ".main-container" ).html(toHtml(markup));
+                }
                 $( "body" ).removeClass("error404");
                 setCurrentPageActiveStyle();
             },
