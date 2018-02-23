@@ -1,6 +1,6 @@
 # Introduction
 
-This website contains the work performed as part of the master's thesis in computer science (MSc) of [Santiago Iturriaga](http://www.fing.edu.uy/inco/grupos/cecal/hpc/pmwiki/index.php?n=Main.SantiagoIturriaga).
+This website contains the work performed as part of the master's thesis in computer science (MSc) of [Santiago Iturriaga](http://www.fing.edu.uy/~siturria).
 
 My thesis' files can be found here:
 * [PDF document](http://www.fing.edu.uy/inco/grupos/cecal/hpc/MScIturriaga/MSc-Iturriaga.pdf)
