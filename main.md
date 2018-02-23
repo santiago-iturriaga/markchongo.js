@@ -3,10 +3,10 @@
 This website contains the work performed as part of the master's thesis in computer science (MSc) of [Santiago Iturriaga](http://www.fing.edu.uy/~siturria).
 
 My thesis' files can be found here:
-* [PDF document](http://www.fing.edu.uy/inco/grupos/cecal/hpc/MScIturriaga/MSc-Iturriaga.pdf)
-* [Bibtex bibliography](http://www.fing.edu.uy/inco/grupos/cecal/hpc/MScIturriaga/MSc-Iturriaga-bibliography.bib)
-* [LaTeX template](http://www.fing.edu.uy/inco/grupos/cecal/hpc/MScIturriaga/MSc-Iturriaga-latex.zip)
-* [Presentation slides](http://www.fing.edu.uy/inco/grupos/cecal/hpc/MScIturriaga/MSc-Iturriaga-presentation.pdf)
+* [PDF document](http://www.fing.edu.uy/~siturria/msc/MScIturriaga/MSc-Iturriaga.pdf)
+* [Bibtex bibliography](http://www.fing.edu.uy/~siturria/msc/MSc-Iturriaga-bibliography.bib)
+* [LaTeX template](http://www.fing.edu.uy/~siturria/msc/MSc-Iturriaga-latex.zip)
+* [Presentation slides](http://www.fing.edu.uy/~siturria/msc/MSc-Iturriaga-presentation.pdf)
 
 # Abstract
 
