@@ -62,6 +62,14 @@ body {
  color:#fff;
 }
 
+.container .language {
+ float:right;
+ color:white;
+ padding-top:10px;
+ padding-right:10px;
+ margin-right:0px;
+}
+
 /* Start by setting display:none to make this hidden.
    Then we position it in relation to the viewport window
    with position:fixed. Width, height, top and left speak
