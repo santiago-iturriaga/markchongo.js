@@ -1,3 +1,5 @@
 * [About me](main.md)
-* [My publications](Iturriaga_Santiago.bib)
+* [Research groups](groups.md)
+* [Social networking](social.md)
+* [Some of my work](Iturriaga_Santiago.bib)
 
