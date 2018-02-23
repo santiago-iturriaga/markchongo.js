@@ -3,8 +3,8 @@
 This website contains the work performed as part of the doctoral thesis in computer science of [Santiago Iturriaga](http://www.fing.edu.uy/~siturria).
 
 My thesis' files can be found here:
-* [PDF document](http://www.fing.edu.uy/inco/grupos/cecal/hpc/PhDIturriaga/PhD-Iturriaga.pdf)
-* [Presentation slides](http://www.fing.edu.uy/inco/grupos/cecal/hpc/PhDIturriaga/PhD-Iturriaga-presentation.pdf)
+* [PDF document](http://www.fing.edu.uy/~siturria/phd/PhD-Iturriaga.pdf)
+* [Presentation slides](http://www.fing.edu.uy/~siturria/phd/PhD-Iturriaga-presentation.pdf)
 
 # Abstract
 
