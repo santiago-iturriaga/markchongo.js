@@ -29,3 +29,13 @@ Some skins examples are included in css/ and may be included using:
 * `<link href="css/bootstrap.superhero.min.css" rel="stylesheet">`
 
 A markdown cheat sheet can be found here: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+## Development environment setup
+
+Simply change to markchongo.js directory and run:
+```python2 -m SimpleHTTPServer```
+or
+```python3 -m http.server```
+
+And then browse to http://localhost:8000/index.html
+
