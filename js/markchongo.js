@@ -207,7 +207,9 @@ $(window).on('hashchange', function() {
 $(document).ready(function() {
     loadCurrentState();
 
-    document.title = TITLE;
-    $('#title-page').html(TITLE);
-    $('#sub-title-page').html(SUB_TITLE);
+    document.title = config.title;
+    $('#title-page').html(config.title);
+    $('#sub-title-page').html(config.sub_title);
+
+    lang = config.lang; // todo
 });

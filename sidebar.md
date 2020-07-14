@@ -2,4 +2,5 @@
 * [Page 1](page1.md)
 * [Page 2](page2.md)
 * [Readme](README.md)
+* [BibTex](example.bib)
 * [External link example](https://www.google.com)
