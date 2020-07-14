@@ -6,6 +6,7 @@ Based on:
 * Bootstrap http://getbootstrap.com/
 * JQuery https://jquery.com/
 * Marked https://github.com/chjj/marked
+* bib-publication-list https://github.com/vkaravir/bib-publication-list
 
 Sample web site: http://santiago-iturriaga.github.io/markchongo.js/
 
