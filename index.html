@@ -6,9 +6,10 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+        <link href="css/bootstrap.sandstone.min.css" rel="stylesheet">
         <!--<link href="css/bootstrap.darkly.min.css" rel="stylesheet">
         <link href="css/bootstrap.flatty.min.css" rel="stylesheet">-->
-        <link href="css/bootstrap.readable.min.css" rel="stylesheet">
+        <!--<link href="css/bootstrap.readable.min.css" rel="stylesheet">-->
         <!--<link href="css/bootstrap.sandstone.min.css" rel="stylesheet">
         <link href="css/bootstrap.superhero.min.css" rel="stylesheet">-->
 
@@ -16,97 +17,99 @@
             <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <link href="css/bib-publication-list.css" rel="stylesheet"/>
-        <link href="index.css" rel="stylesheet">
+        <link href="index_2.css" rel="stylesheet">
         <script src="config.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-fixed-top" role="banner">
-          <div class="container">
-			<div class="language"></div>
-            <div class="navbar-header">
-              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a href="/" class="navbar-brand"><img src="img/logo.png" height="40px" /></a>
-            </div>
-            <nav class="collapse navbar-collapse topbar-container" role="navigation">
-              <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-              </ul>
-            </nav>
-          </div>
-        </nav>
 
-        <div id="masthead">
-          <div class="container">
-              <div class="row">
-                <div class="col-md-7">
-                  <h1><span id="title-page"></span>
-                    <p id="sub-title-page" class="lead"></p>
-                  </h1>
-                </div>
-                <div class="col-md-5">
-                    <div class="well well-lg">
-                      <div class="row">
-                        <div class="col-sm-4">
-                            <a href="https://www.fing.edu.uy/inco/grupos/cecal"><img src="img/none.png" class="img-responsive" style="margin:auto;" /></a>
-                        </div>
-                        <div class="col-sm-4">
-                            <a href="https://www.fing.edu.uy/"><img src="img/none.png" class="img-responsive" style="margin:auto;" /></a>
-                        </div>
-                            <div class="col-sm-4">
-                            <a href="http://www.universidad.edu.uy/"><img src="img/none.png" class="img-responsive" style="margin:auto;" /></a>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-              </div>
-          </div>
+      <nav class="navbar navbar-dark bg-dark navbar-fixed-top" role="banner">
+        <div class="d-flex">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
 
-        <!--main-->
+        <div class="d-flex">
+          <!--<div class="language"></div>-->
+        </div>
+
+        <div class="d-flex">
+         <a href="/" class="navbar-brand"><img src="img/logo.png" height="40px" /></a>
+        </div>
+
+        <nav class="collapse navbar-collapse topbar-container" role="navigation">
+          <!-- Collapsable menu -->
+        </nav>
+      </nav>
+
+      <div id="masthead">
         <div class="container">
             <div class="row">
-              <!--left-->
-              <div class="col-md-3 sidebar-container">
-
-              </div><!--/left-->
-
-              <!--right-->
-              <div class="col-md-9">
-                  <div class="main-container"></div>
-                  <div id="bibtex-container">
-                     <!--<table id="pubTable" class="display"></table>
-                     <pre id="bibtex" style="display:none;"></pre>-->
+              <div class="col-md-7">
+                <h1><span id="title-page"></span>
+                  <p id="sub-title-page" class="lead"></p>
+                </h1>
+              </div>
+              <div class="col-md-5">
+                  <div class="well well-lg">
+                    <div class="row">
+                      <div class="col-sm-4">
+                          <a href="https://www.fing.edu.uy/inco/grupos/cecal"><img src="img/none.png" class="img-responsive" style="margin:auto;" /></a>
+                      </div>
+                      <div class="col-sm-4">
+                          <a href="https://www.fing.edu.uy/"><img src="img/none.png" class="img-responsive" style="margin:auto;" /></a>
+                      </div>
+                          <div class="col-sm-4">
+                          <a href="http://www.universidad.edu.uy/"><img src="img/none.png" class="img-responsive" style="margin:auto;" /></a>
+                      </div>
+                    </div>
                   </div>
-              </div><!--/right-->
-            </div><!--/row-->
-        </div><!--/container-->
-
-        <div class="modalError404">
-            <p class="enormous-font bree-font">404</p>
-            <p class="big-font">This is just embarrassing; this page does not exist...</p>
+              </div>
+            </div>
         </div>
+      </div>
 
-        <div style="margin-top: 30px;">
-            <a href="https://github.com/santiago-iturriaga/markchongo.js" style="right: 10px; position: absolute;">
-                <img src="img/poweredby.png" height="20px"></a>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-2" id="sidebar">
+                <div class="list-group sidebar-container">
+                </div>
+              </div>
+              <main class="col-md-10 main">
+                <div class="main-container">
+                </div>
+                <div id="bibtex-container">
+                  <!--<table id="pubTable" class="display"></table>
+                  <pre id="bibtex" style="display:none;"></pre>-->
+                </div>
+              </main>
+          </div>
+      </div>
+
+      <div id="mastfoot">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-11">
+              </div>
+              <div class="col-md-1">
+                <a href="https://github.com/santiago-iturriaga/markchongo.js" style="right: 10px; position: absolute;"><img src="img/poweredby.png" height="20px"></a>
+              </div>
+            </div>
         </div>
+      </div>
 
-        <div class="modalLoading"><!-- Loading... --></div>
+      <div class="modalError404">
+          <p class="enormous-font bree-font">404</p>
+          <p class="big-font">This is just embarrassing; this page does not exist...</p>
+      </div>
 
-        <!-- script references -->
-        <script src="js/jquery-2.1.4.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <script src="js/marked.js"></script>
-        <script src="js/markchongo.js"></script>
-        <script src="js/bib-list.js"></script>
-    </body>
+      <div class="modalLoading"><!-- Loading... --></div>
+
+      <!-- script references -->
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/marked.js"></script>
+      <script src="js/markchongo.js"></script>
+      <script src="js/bib-list.js"></script>
+  </body>
 </html>

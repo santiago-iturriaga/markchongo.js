@@ -42,14 +42,14 @@ function goToPage(filename) {
 }
 
 function cleanCurrentPageActiveStyle() {
-    $( ".sidebar-container li" ).removeClass("active");
+    $( ".sidebar-container a" ).removeClass("active");
 }
 
 function setCurrentPageActiveStyle() {
     var filename_ext = CURRENT_PAGE.split('.').pop();
     var filename = CURRENT_PAGE.substr(0,CURRENT_PAGE.length - filename_ext.length - 1);
 
-    $($( ".sidebar-container a.__page_"+filename ).parent()).addClass("active");
+    $( ".sidebar-container a.__page_"+filename ).addClass("active");
 }
 
 function loadMainMarkdown(filename) {
@@ -75,7 +75,7 @@ function loadMainMarkdown(filename) {
             // the response is passed to the function
             success: function( markup ) {
                 $( document ).scrollTop(0);
-                
+
                 var filename_ext = '.' + CURRENT_PAGE.split('.').pop();
                 var filename = CURRENT_PAGE.substr(0,CURRENT_PAGE.length - filename_ext.length - 1);
 
@@ -182,9 +182,8 @@ function loadCurrentState() {
 
             // Code to run regardless of success or failure
             complete: function( xhr, status ) {
-                //$($( ".sidebar-container" ).children()[0]).addClass("nav nav-sidebar");
-                $( ".sidebar-container" ).children().addClass("nav nav-sidebar");
-                $( ".topbar-container" ).children().addClass("nav navbar-nav");              
+                $( ".sidebar-container a" ).addClass("list-group-item");
+                $( ".topbar-container a" ).addClass("list-group-item");
                 loadMainMarkdown(newPage);
             }
         });
