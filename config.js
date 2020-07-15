@@ -1,5 +1,5 @@
 var config = {
-	lang:['es','en'],
-	title:'Title',
-	sub_title:'Sub title',
+  lang:['es','en'],
+  title:'My great project',
+  sub_title:'Really superb',
 }
