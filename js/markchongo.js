@@ -51,7 +51,6 @@ function setCurrentPageActiveStyle() {
         $(links[i]).addClass("active");
       }
   }
-  /*  $( ".sidebar-container a.__page_"+filename ).addClass("active");*/
 }
 
 function loadMainMarkdown(filename) {
@@ -189,6 +188,10 @@ $(window).on('hashchange', function() {
 });
 
 $(document).ready(function() {
+  for (i=0; i<config.lang.length; i++) {
+    $(".language").append("<a href='?"+config.lang[i]+"'><img src='img/flags/"+config.lang[i]+".png' class='img-responsive' style='margin:auto;' alt='["+config.lang[i]+"]' /></a>");
+  }
+
   LANGUAGE = config.lang[0];
   DEFAULT_PAGE = config.default_page[LANGUAGE];
   SIDEBAR_PAGE = config.sidebar_page[LANGUAGE];
