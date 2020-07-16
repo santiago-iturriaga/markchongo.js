@@ -188,8 +188,10 @@ $(window).on('hashchange', function() {
 });
 
 $(document).ready(function() {
-  for (i=0; i<config.lang.length; i++) {
-    $(".language").append("<a href='?"+config.lang[i]+"'><img src='img/flags/"+config.lang[i]+".png' class='img-responsive' style='margin:auto;' alt='["+config.lang[i]+"]' /></a>");
+  if (config.lang.length > 1) {
+    for (i=0; i<config.lang.length; i++) {
+      $(".language").append("<a href='?"+config.lang[i]+"'><img src='img/flags/"+config.lang[i]+".png' class='img-responsive' style='margin:auto;' alt='["+config.lang[i]+"]' /></a>");
+    }
   }
 
   LANGUAGE = config.lang[0];

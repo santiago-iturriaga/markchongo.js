@@ -8,6 +8,7 @@ Based on:
 * JQuery https://jquery.com
 * Marked https://github.com/chjj/marked
 * bib-publication-list https://github.com/vkaravir/bib-publication-list
+* GoSquared's Flag Icon Set https://github.com/gosquared/flags/
 
 Sample web site: http://santiago-iturriaga.github.io/markchongo.js/
 
