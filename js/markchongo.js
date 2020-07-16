@@ -190,7 +190,7 @@ $(window).on('hashchange', function() {
 $(document).ready(function() {
   if (config.lang.length > 1) {
     for (i=0; i<config.lang.length; i++) {
-      $(".language").append("<a href='?"+config.lang[i]+"'><img src='img/flags/"+config.lang[i]+".png' class='img-responsive' style='margin:auto;' alt='["+config.lang[i]+"]' /></a>");
+      $(".language").append("<a href='?"+config.lang[i]+"'><img src='img/flags/"+config.lang[i]+".png' class='img-responsive mx-1' alt='["+config.lang[i]+"]' /></a>");
     }
   }
 
