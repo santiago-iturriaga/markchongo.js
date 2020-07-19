@@ -1,50 +1,30 @@
-/*
-A Bootstrap 3.1 affix sidebar template
-from http://bootply.com
-
-This CSS code should follow the 'bootstrap.css'
-in your HTML file.
-
-license: MIT
-author: bootply.com
-*/
-
-body {
- padding-top:50px;
+.navbar {
+  padding: 0.5rem 0.5rem !important;
 }
 
 #masthead {
- /*min-height:225px;*/
- min-height:100px;
+  min-height: 100px;
+  margin-top: 2px;
 }
 
-#masthead h1 {
- font-size: 50px;
- line-height: 1;
- padding-top:20px;
+#title-page {
+  font-size: 50px;
 }
 
-#masthead .well {
- margin-top:8%;
- display: none;
+#sub-title-page {
+  margin-top: 3px;
 }
 
 .sidebar-container {
   display: none;
 }
 
-.sidebar-container li.active {
-  /*border:0 #eee solid;*/
-  border:0 #111155 solid;
-  border-right-width:5px;
+#masthead .logos {
+  display: none;
 }
 
-/*.navbar-collapse.collapse {
-    display: block !important;
-}*/
-
 @media screen and (min-width: 1000px) {
-  #masthead .well {
+  #masthead .logos {
     display: block;
   }
 
@@ -52,26 +32,21 @@ body {
     display: block;
   }
 
-  .navbar-collapse.collapse {
+  .navbar-toggler {
     display: none !important;
   }
 }
 
-.navbar-bright {
- background-color:#111155;
- color:#fff;
-}
-
 .container .language {
- float:right;
- color:white;
- padding-top:10px;
- padding-right:10px;
- margin-right:0px;
+  float:right;
+  color:white;
+  padding-top:10px;
+  padding-right:10px;
+  margin-right:0px;
 }
 
 .main-container {
- text-align: justify;
+    text-align: justify;
 }
 
 /* Start by setting display:none to make this hidden.
@@ -106,23 +81,23 @@ body.loading .modalLoading {
 }
 
 .modalError404 {
-	display: none;
+  display: none;
 }
 
 body.error404 .modalError404 {
-	text-align: center;
-	display: block;
+  text-align: center;
+  display: block;
 }
 
 body.error404 .main-container {
-	display: none;
+  display: none;
 }
 
 .enormous-font{
-	font-size: 10em;
-	margin-bottom: 0em;
+  font-size: 10em;
+  margin-bottom: 0em;
 }
 
 .big-font{
-	font-size: 2em;
+  font-size: 2em;
 }

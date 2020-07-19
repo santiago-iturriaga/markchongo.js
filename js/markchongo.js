@@ -1,55 +1,56 @@
-/*
- * If USE_HASH_LOCATION is true, then location if of the form: index.html#main.md
- * else, location is of the form: index.html?p=main.md
- * */
-var USE_HASH_LOCATION = true;
 var CURRENT_PAGE = null;
 
-var DEFAULT_PREFIX = ''; //'docs/';
 var DEFAULT_EXT = '.md';
-
 var BIBTEX_PREFIX = '';
 var BIBTEX_EXT = '.bib';
+var LANGUAGE = '';
+var DEFAULT_PAGE = '';
+var SIDEBAR_PAGE = '';
 
 function getPageUrl(filename) {
-    return DEFAULT_PREFIX + filename + DEFAULT_EXT;
+  var filename_parts = filename.split('.');
+  if (filename_parts.length == 1) {
+    filename = filename + DEFAULT_EXT;
+  }
+
+  if (LANGUAGE != '') {
+    return LANGUAGE + '/' + filename;
+  } else {
+    return filename + DEFAULT_EXT;
+  }
 }
 
 function toHtml(markup) {
     var html = '';
-
     html = marked(markup);
-    //html = micromarkdown.parse(markup);
-    //html = wiky.process(markup);
-
     return html
 }
 
 function goToPage(filename) {
-    if (!USE_HASH_LOCATION) {
-        var queryParameters = {}, queryString = location.search.substring(1),
-        re = /([^&=]+)=([^&]*)/g, m;
-
-        while (m = re.exec(queryString)) {
-            queryParameters[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
-        }
-
-        queryParameters['p'] = filename;
-        location.search = $.param(queryParameters);
-    } else {
-        loadMainMarkdown(filename);
-    }
+    loadMainMarkdown(filename);
 }
 
 function cleanCurrentPageActiveStyle() {
-    $( ".sidebar-container li" ).removeClass("active");
+    $( ".sidebar-container a" ).removeClass("active");
 }
 
 function setCurrentPageActiveStyle() {
-    var filename_ext = CURRENT_PAGE.split('.').pop();
-    var filename = CURRENT_PAGE.substr(0,CURRENT_PAGE.length - filename_ext.length - 1);
+  var filename_parts = CURRENT_PAGE.split('#').pop().split('/').pop().split('.');
+  var filename_ext = '.' + filename_parts.pop();
+  var filename = filename_parts.pop();
+  var href_link = null;
 
-    $($( ".sidebar-container a.__page_"+filename ).parent()).addClass("active");
+  if (filename_ext != DEFAULT_EXT) {
+    href_link = filename + filename_ext;
+  } else {
+    href_link = filename;
+  }
+  links = $( ".sidebar-container a" );
+  for (i=0; i<links.length; i++) {
+      if (links[i].href.split('#').pop()==href_link) {
+        $(links[i]).addClass("active");
+      }
+  }
 }
 
 function loadMainMarkdown(filename) {
@@ -75,7 +76,7 @@ function loadMainMarkdown(filename) {
             // the response is passed to the function
             success: function( markup ) {
                 $( document ).scrollTop(0);
-                
+
                 var filename_ext = '.' + CURRENT_PAGE.split('.').pop();
                 var filename = CURRENT_PAGE.substr(0,CURRENT_PAGE.length - filename_ext.length - 1);
 
@@ -109,13 +110,6 @@ function loadMainMarkdown(filename) {
 
             // Code to run regardless of success or failure
             complete: function( xhr, status ) {
-                if (USE_HASH_LOCATION) {
-                    var newHash = '#' + CURRENT_PAGE;
-
-                    if (window.location.hash != newHash) {
-                        window.location.hash = newHash;
-                    }
-                }
             }
         });
     }
@@ -124,35 +118,25 @@ function loadMainMarkdown(filename) {
 function loadCurrentState() {
     var newPage = null;
 
-    if (USE_HASH_LOCATION) {
-        var hash = window.location.hash;
-        if (hash.length > 1) {
-            newPage = hash.substring(1);
-        } else {
-            newPage = getPageUrl('main');
-        }
+    queryString = location.search.substring(1);
+    if (queryString) {
+      LANGUAGE = queryString;
+      DEFAULT_PAGE = config.default_page[LANGUAGE];
+      SIDEBAR_PAGE = config.sidebar_page[LANGUAGE];
+    }
+
+    var hash = window.location.hash;
+    if (hash.length > 1) {
+        newPage = getPageUrl(hash.substring(1));
     } else {
-        var queryParameters = {}, queryString = location.search.substring(1),
-            re = /([^&=]+)=([^&]*)/g, m;
-
-        // Creates a map with the query string parameters
-        while (m = re.exec(queryString)) {
-            queryParameters[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
-        }
-
-        if (!queryParameters['p']) {
-            // No page found. Go to default.
-            goToPage(getPageUrl('main'));
-        } else {
-            newPage = queryParameters['p'];
-        }
+        newPage = getPageUrl(DEFAULT_PAGE);
     }
 
     if ((newPage) && (newPage != CURRENT_PAGE)) {
         // Using the core $.ajax() method
         $.ajax({
             // The URL for the request
-            url: getPageUrl('sidebar'),
+            url: getPageUrl(SIDEBAR_PAGE),
 
             // The data to send (will be converted to a query string)
             data: {},
@@ -182,9 +166,8 @@ function loadCurrentState() {
 
             // Code to run regardless of success or failure
             complete: function( xhr, status ) {
-                //$($( ".sidebar-container" ).children()[0]).addClass("nav nav-sidebar");
-                $( ".sidebar-container" ).children().addClass("nav nav-sidebar");
-                $( ".topbar-container" ).children().addClass("nav navbar-nav");              
+                $( ".sidebar-container a" ).addClass("list-group-item");
+                $( ".topbar-container a" ).addClass("list-group-item");
                 loadMainMarkdown(newPage);
             }
         });
@@ -201,13 +184,23 @@ $(document).on({
 });
 
 $(window).on('hashchange', function() {
-    loadCurrentState();
+  loadCurrentState();
 });
 
 $(document).ready(function() {
-    loadCurrentState();
+  if (config.lang.length > 1) {
+    for (i=0; i<config.lang.length; i++) {
+      $(".language").append("<a href='?"+config.lang[i]+"'><img src='img/flags/"+config.lang[i]+".png' class='img-responsive mx-1' alt='["+config.lang[i]+"]' /></a>");
+    }
+  }
 
-    document.title = config.title;
-    $('#title-page').html(config.title);
-    $('#sub-title-page').html(config.sub_title);
+  LANGUAGE = config.lang[0];
+  DEFAULT_PAGE = config.default_page[LANGUAGE];
+  SIDEBAR_PAGE = config.sidebar_page[LANGUAGE];
+
+  loadCurrentState();
+
+  document.title = config.title[LANGUAGE];
+  $('#title-page').html(config.title[LANGUAGE]);
+  $('#sub-title-page').html(config.sub_title[LANGUAGE]);
 });
