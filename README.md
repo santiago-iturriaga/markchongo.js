@@ -10,7 +10,7 @@ Based on:
 * bib-publication-list https://github.com/vkaravir/bib-publication-list
 * GoSquared's Flag Icon Set https://github.com/gosquared/flags/
 
-Sample web site: http://santiago-iturriaga.github.io/markchongo.js/
+Sample web site: https://www.fing.edu.uy/~siturria/
 
 ## Configuring Markchongo.js
 
