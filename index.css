@@ -15,7 +15,7 @@
   margin-top: 3px;
 }
 
-.sidebar-container {
+#sidebar {
   display: none;
 }
 
@@ -28,7 +28,7 @@
     display: block;
   }
 
-  .sidebar-container {
+  #sidebar {
     display: block;
   }
 
